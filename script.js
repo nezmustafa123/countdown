@@ -12,5 +12,5 @@ const c = setInterval(() => {
 
   const countDown = document.getElementById("countdown");
 
-  countDown.textContent = `${days}Days ${hours}Mrs : ${minutes} Min : ${}`;
+  countDown.textContent = `${days}Days ${hours}Hrs : ${minutes} Min : ${seconds}s`;
 }, 1000);
