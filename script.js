@@ -1,4 +1,4 @@
-const countTo = "1 Jan 2023";
+const countTo = "30 April 2022";
 //specify count to variable
 const c = setInterval(() => {
   const endDate = new Date(countTo);
@@ -13,4 +13,14 @@ const c = setInterval(() => {
   const countDown = document.getElementById("countdown");
 
   countDown.textContent = `${days}Days ${hours}Hrs : ${minutes} Min : ${seconds}s`;
+
+  if (totalSeconds < 0) {
+    //clear interval
+    clearInterval(c);
+    countDown.textContent = "Happy New Year";
+  }
 }, 1000);
+
+function format(t) {//add 0 to time if less than 10
+  return t< 10 ?
+}
